@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import loginbg from "../utils/loginbg.jpg";
+import loginbg from "../components/utils/loginbg.jpg";
 import Header from "../components/Header";
-import { checkvalidateData } from "../utils/validEP";
-import { auth } from "../utils/firebase";
+import { checkvalidateData } from "../components/utils/validEP";
+import { auth } from "../components/utils/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -10,7 +10,7 @@ import {
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addUser } from "../utils/userSlice";
+import { addUser } from "../components/utils/userSlice";
 const Login = () => {
   const [isSignIn, setisSignIn] = useState(true);
   const [errormassage, seterrormassage] = useState(null);

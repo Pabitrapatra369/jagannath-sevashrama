@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Body from "./components/Body";
 import Login from "./components/Login";
 import { Provider } from "react-redux";
-import appStore from "./utils/appStore";
+import appStore from "./components/utils/appStore";
 import About from "./components/About";
 import Activity from "./components/Activity";
 import Education from "./components/Education";

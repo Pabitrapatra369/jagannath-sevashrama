@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../utils/logo.png";
+import logo from "../components/utils/logo.png";
 import { useSelector } from "react-redux";
-import { auth } from "../utils/firebase";
+import { auth } from "../components/utils/firebase";
 import { signOut } from "firebase/auth";
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -26,7 +26,8 @@ const Header = () => {
     <div>
       <div className=" w-full h-15 p-5  bg-blue-800 text-white px-36 flex justify-between">
         <div className=" font-bold ">
-          Phone: (+91) 9560 966 544 | Email: support@igvt.org
+          Phone: (+91) 9556 346 946 | Email:
+          shreejagannathvidyamandir123@gmail.com
         </div>
         <div>
           <Link>🟢</Link>
